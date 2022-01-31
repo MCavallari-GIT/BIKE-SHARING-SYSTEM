@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.statsController">
+   <top>
+      <AnchorPane prefHeight="409.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="220.0" layoutY="25.0" text="STATISTICHE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="105.0" text="numero stazioni nel db: " />
+            <Label layoutX="74.0" layoutY="160.0" text="numero utenti nell db: " />
+            <Label layoutX="70.0" layoutY="218.0" text="duratat media dei prelievi" />
+            <Label layoutX="78.0" layoutY="279.0" text="tipo bici più utilizzata" />
+            <Label fx:id="stazione" layoutX="356.0" layoutY="105.0" text="statzione" />
+            <Label fx:id="utente" layoutX="362.0" layoutY="160.0" text="utente" />
+            <Label fx:id="prelievo" layoutX="362.0" layoutY="218.0" text="prelievo" />
+            <Label fx:id="bici" layoutX="369.0" layoutY="279.0" text="bici" />
+            <Button layoutX="66.0" layoutY="31.0" mnemonicParsing="false" onAction="#on_indietro" text="&lt;" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

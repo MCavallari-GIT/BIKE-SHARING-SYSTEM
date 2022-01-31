@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.homeController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="183.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="200.0" layoutY="147.0">
+               <image>
+                  <Image url="@../../../bikemi.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="331.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <CheckBox fx:id="reg" layoutX="75.0" layoutY="113.0" mnemonicParsing="false" onAction="#clickReg" text="Registrazione" textFill="#d6a13a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="tot" layoutX="75.0" layoutY="172.0" mnemonicParsing="false" onAction="#clicktot" text="Totem" textFill="#d6a13a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="pers" layoutX="75.0" layoutY="233.0" mnemonicParsing="false" onAction="#clickpers" text="Personale" textFill="#d6a13a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="send" layoutX="133.0" layoutY="317.0" mnemonicParsing="false" onAction="#clicksend" text="Button" textFill="#f00202" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

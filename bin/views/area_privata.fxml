@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.area_privataController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="77.0" layoutY="21.0" text="BENVENUTO NELL'AREA RISERVATA">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="danno" layoutX="105.0" layoutY="267.0" mnemonicParsing="false" onAction="#onDanno" text="Comunica Danno" />
+            <CheckBox fx:id="bici" layoutX="363.0" layoutY="267.0" mnemonicParsing="false" onAction="#onBici" text="Ritira/deposita bicicletta" />
+            <Button layoutX="279.0" layoutY="333.0" mnemonicParsing="false" onAction="#onInvia" text="Invia" />
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="339.0" layoutY="61.0">
+               <image>
+                  <Image url="@../../../depositphotos_97976564-stock-illustration-bicycle-vector-icon.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="62.0" layoutY="61.0">
+               <image>
+                  <Image url="@../../../download.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#onIndietro" text="&lt;" />
+            <Label fx:id="label" layoutX="432.0" layoutY="337.0" text="label" textFill="#fff4f4" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.regController">
+   <top>
+      <AnchorPane prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="110.0" layoutY="19.0" text="REGISTRAZIONE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="indietro" layoutX="37.0" layoutY="25.0" mnemonicParsing="false" onAction="#onIndietro" text="&lt;" />
+            <ImageView fitHeight="53.0" fitWidth="199.0" layoutX="373.0" layoutY="12.0">
+               <image>
+                  <Image url="@../../../bikemi.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="367.0" prefWidth="592.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="22.0" layoutY="14.0" text="INSERIRE DATI RELATIVI ALL'UTENTE" />
+            <TextField fx:id="nome" layoutX="95.0" layoutY="50.0" />
+            <TextField fx:id="cognome" layoutX="95.0" layoutY="103.0" />
+            <PasswordField fx:id="password" layoutX="95.0" layoutY="157.0" />
+            <CheckBox fx:id="studente" layoutX="95.0" layoutY="195.0" mnemonicParsing="false" text="sono uno studente" />
+            <Label layoutX="29.0" layoutY="54.0" text="Nome" />
+            <Label layoutX="19.0" layoutY="99.0" text="Cognome" />
+            <Label layoutX="20.0" layoutY="153.0" text="Password" />
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="325.0" prefWidth="333.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="46.0" layoutY="14.0" text="INFROMAZIONI RELATIVE ALLA CARTA DI CREDITO" />
+            <TextField fx:id="numero" layoutX="131.0" layoutY="45.0" />
+            <TextField fx:id="codice" layoutX="131.0" layoutY="101.0" />
+            <DatePicker fx:id="scadenza" layoutX="131.0" layoutY="162.0" />
+            <Label layoutX="51.0" layoutY="49.0" text="Numero" />
+            <Label layoutX="23.0" layoutY="105.0" text="Codice di sicurezza" />
+            <Label layoutX="46.0" layoutY="162.0" text="Scadenza" />
+         </children>
+      </AnchorPane>
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="109.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="63.0" layoutY="14.0" text="INFORMAZIONI RELATIVA ALL'ABBONAMENTO" />
+            <Label layoutX="78.0" layoutY="46.0" text="Tipo" />
+            <Button fx:id="invia" layoutX="478.0" layoutY="42.0" mnemonicParsing="false" onAction="#onInvia" text="Invia" />
+            <ChoiceBox fx:id="tipo" layoutX="122.0" layoutY="42.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
